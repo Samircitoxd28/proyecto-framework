@@ -1,0 +1,148 @@
+﻿@page "/Error"
+@using System.Diagnostics
+
+<PageTitle>Error</PageTitle>
+
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fafafa;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            width: 400px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .title {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .input-group {
+            margin-top: 15px;
+        }
+
+        label {
+            font-size: 14px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .duration-options {
+            display: flex;
+            gap: 5px;
+            margin-top: 5px;
+        }
+
+        .duration-options button {
+            padding: 6px 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background: white;
+            cursor: pointer;
+            font-size: 12px;
+        }
+
+        .duration-options button.active {
+            background: #ff6b6b;
+            color: white;
+            border: none;
+        }
+
+        .color-options {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .color-options div {
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            cursor: pointer;
+            border: 2px solid transparent;
+        }
+
+        .color-options div.selected {
+            border: 2px solid black;
+        }
+
+        .colors {
+            background-color: red;
+        }
+
+        .details {
+            background: #eee;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 12px;
+            color: #555;
+        }
+    </style>
+
+    <div class="container">
+        <div class="title">Nuevo Hábito</div>
+
+        <div class="input-group">
+            <label>➕ Título del Hábito:</label>
+            <input type="text" placeholder="Tomar agua">
+        </div>
+
+        <div class="input-group">
+            <label>⏰ Duración:</label>
+            <div class="duration-options">
+                <button>15 min</button>
+                <button class="active">30 min</button>
+                <button>45 min</button>
+                <button>2 horas</button>
+                <button>3 horas</button>
+            </div>
+        </div>
+
+        <div class="input-group">
+            <label>⚡ Tipo de Hábito:</label>
+            <select>
+                <option>Hábito sano</option>
+                <option>Trabajo</option>
+                <option>Ejercicio</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label>🎨 Selecciona un color para el hábito:</label>
+            <div class="color-options">
+                <div style="background-color: red;"></div>
+                <div style="background-color: orange;"></div>
+                <div style="background-color: yellow;"></div>
+                <div style="background-color: green;"></div>
+                <div style="background-color: blue;"></div>
+                <div style="background-color: purple;"></div>
+                <div style="background-color: brown;"></div>
+            </div>
+        </div>
+
+        <div class="input-group">
+            <label>📝 ¿Algún detalle?</label>
+            <div class="details">Añadir detalles al hábito</div>
+        </div>
+    </div>

@@ -1,0 +1,128 @@
+﻿@page "/weather"
+@attribute [StreamRendering]
+
+<div class="config-container">
+        <a href="#" class="back-button">← Regresar</a>
+        <h1 class="config-title">Configuración <span class="icon">⚙️</span></h1>
+        <div class="config-options">
+            <button class="config-btn">
+                <span class="icon">✏️</span> Editar un hábito
+            </button>
+            <div class="config-btn toggle-container">
+                <span class="icon">🔔</span> Manejo de Notificaciones
+                <input type="checkbox" id="toggle-notifications">
+            </div>
+            <button class="config-btn">
+                <span class="icon">🗑️</span> Borrar un hábito
+            </button>
+            <button class="config-btn">
+                <span class="icon">🛡️</span> Términos y condiciones
+            </button>
+        </div>
+        <button class="logout-btn">
+            <span class="icon">⏻</span> Cerrar Sesión
+        </button>
+    </div>
+
+    <style>
+        
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.config-container {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+}
+
+.back-button {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.config-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.config-title .icon {
+    margin-left: 8px;
+}
+
+.config-options {
+    margin: 20px 0;
+}
+
+.config-btn {
+    background: #e0e0e0;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 15px;
+    margin: 10px 0;
+    width: 100%;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background 0.3s;
+}
+
+.config-btn:hover {
+    background: #d6d6d6;
+}
+
+.toggle-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#toggle-notifications {
+    width: 20px;
+    height: 20px;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.logout-btn {
+    background: #e53935;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 15px;
+    width: 100%;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background 0.3s;
+}
+
+.logout-btn:hover {
+    background: #d32f2f;
+}
+
+.icon {
+    margin-right: 8px;
+    font-size: 18px;
+}
+
+    </style>

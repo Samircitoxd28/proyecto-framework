@@ -1,0 +1,234 @@
+﻿@page "/counter"
+@rendermode InteractiveServer
+
+<PageTitle>Seguimiento de Hábitos</PageTitle>
+
+<style>
+    body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+    display: flex;
+    height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background-color: #1e1e2f;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.sidebar h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    padding: 0.8rem;
+    font-size: 1rem;
+    color: #b5b5b5;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-link i {
+    margin-right: 0.5rem;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    background-color: #6c63ff;
+    color: white;
+}
+
+/* Main Content */
+.main-content {
+    flex-grow: 1;
+    padding: 2rem;
+    background-color: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.stats {
+    display: flex;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.card {
+    flex: 1;
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #555;
+}
+
+.card .number {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #6c63ff;
+}
+
+.charts {
+    display: flex;
+    gap: 1rem;
+}
+
+.chart {
+    flex: 1;
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.chart h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #555;
+}
+
+.placeholder {
+    height: 200px;
+    background-color: #f0f0f0;
+    border: 2px dashed #ddd;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #aaa;
+    font-size: 1rem;
+}
+
+
+</style>
+
+
+    <div class="dashboard">
+        <!-- Sidebar -->
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header>
+                <h1>Dashboard</h1>
+                <p>Bienvenido, <strong>Samirsito</strong></p>
+            </header>
+
+            <section class="stats">
+                <!-- Stat Cards -->
+                <div class="card">
+                    <h3>Total Hábitos</h3>
+                    <p class="number">8</p>
+                </div>
+                <div class="card">
+                    <h3>Hábitos Completados</h3>
+                    <p class="number">5</p>
+                </div>
+                <div class="card">
+                    <h3>Progreso</h3>
+                    <p class="number">62%</p>
+                </div>
+            </section>
+
+            <section class="charts">
+    <!-- Gráfico de barras -->
+    <div class="chart">
+        <h3>Progreso Semanal</h3>
+        <canvas id="barChart"></canvas>
+    </div>
+    <!-- Gráfico circular -->
+    <div class="chart">
+        <h3>Distribución de Hábitos</h3>
+        <canvas id="pieChart"></canvas>
+    </div>
+</section>
+        </main>
+    </div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    // Configuración de datos y opciones
+    const barCtx = document.getElementById('barChart').getContext('2d');
+const barChart = new Chart(barCtx, {
+    type: 'bar',
+    data: {
+        labels: ['Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado', 'Domingo'],
+        datasets: [{
+            label: 'Hábitos completados',
+            data: [3, 4, 2, 5, 1, 3, 4],
+            backgroundColor: 'rgba(54, 162, 235, 0.5)',
+            borderColor: 'rgba(54, 162, 235, 1)',
+            borderWidth: 1
+        }]
+    },
+    options: {
+        responsive: true,
+        plugins: {
+            legend: {
+                display: true,
+                position: 'top'
+            }
+        },
+        scales: {
+            y: {
+                beginAtZero: true
+            }
+        }
+    }
+});
+
+// Gráfico circular
+const pieCtx = document.getElementById('pieChart').getContext('2d');
+const pieChart = new Chart(pieCtx, {
+    type: 'pie',
+    data: {
+        labels: ['Trabajo', 'Ejercicio', 'Lectura', 'Otros'],
+        datasets: [{
+            data: [40, 20, 25, 15],
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.5)',
+                'rgba(54, 162, 235, 0.5)',
+                'rgba(255, 206, 86, 0.5)',
+                'rgba(75, 192, 192, 0.5)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        responsive: true,
+        plugins: {
+            legend: {
+                display: true,
+                position: 'top'
+            }
+        }
+    }
+});
+</script>

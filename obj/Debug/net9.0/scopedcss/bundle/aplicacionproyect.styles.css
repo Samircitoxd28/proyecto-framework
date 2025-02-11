@@ -1,0 +1,176 @@
+/* _content/aplicacionproyect/Components/Layout/MainLayout.razor.rz.scp.css */
+.page[b-w48dgh32z6] {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+main[b-w48dgh32z6] {
+    flex: 1;
+}
+
+.navbar-nav > li > a.active[b-w48dgh32z6] {
+    background-color: rgba(255, 255, 255, 0.25);
+    color: white;
+    border-radius: 0.25rem;
+    transition: background-color 0.3s, color 0.3s;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    padding: 0.3rem 1rem;
+    border: none;
+    text-decoration: none;
+    font-weight: bold;
+}   
+
+.sidebar[b-w48dgh32z6] {
+    
+    background-color: #2A7B73;
+}
+
+.top-row[b-w48dgh32z6] {
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #d6d5d5;
+    justify-content: flex-end;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+}
+
+    .top-row[b-w48dgh32z6]  a, .top-row[b-w48dgh32z6]  .btn-link {
+        white-space: nowrap;
+        margin-left: 1.5rem;
+        text-decoration: none;
+    }
+
+    .top-row[b-w48dgh32z6]  a:hover, .top-row[b-w48dgh32z6]  .btn-link:hover {
+        text-decoration: underline;
+    }
+
+    .top-row[b-w48dgh32z6]  a:first-child {
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+@media (max-width: 640.98px) {
+    .top-row[b-w48dgh32z6] {
+        justify-content: space-between;
+    }
+
+    .top-row[b-w48dgh32z6]  a, .top-row[b-w48dgh32z6]  .btn-link {
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 641px) {
+    .page[b-w48dgh32z6] {
+        flex-direction: row;
+    }
+
+    .sidebar[b-w48dgh32z6] {
+        width: 250px;
+        height: 100vh;
+        position: sticky;
+        top: 0;
+    }
+
+    .top-row[b-w48dgh32z6] {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+
+    .top-row.auth[b-w48dgh32z6]  a:first-child {
+        flex: 1;
+        text-align: right;
+        width: 0;
+    }
+
+    .top-row[b-w48dgh32z6], article[b-w48dgh32z6] {
+        padding-left: 2rem !important;
+        padding-right: 1.5rem !important;
+    }
+}
+
+#blazor-error-ui[b-w48dgh32z6] {
+    color-scheme: light only;
+    background: lightyellow;
+    bottom: 0;
+    box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    display: none;
+    left: 0;
+    padding: 0.6rem 1.25rem 0.7rem 1.25rem;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+    #blazor-error-ui .dismiss[b-w48dgh32z6] {
+        cursor: pointer;
+        position: absolute;
+        right: 0.75rem;
+        top: 0.5rem;
+    }
+/* _content/aplicacionproyect/Components/Layout/NavMenu.razor.rz.scp.css */
+.profile-section[b-7m3dofesld] {
+    text-align: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.avatar[b-7m3dofesld] {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-bottom: 0.5rem;
+    border: 3px solid white;
+}
+
+.perfil-badge[b-7m3dofesld] {
+    background-color: rgba(168, 102, 211, 0.8);
+    color: white;
+    font-size: 0.8rem;
+    padding: 0.3rem 0.6rem;
+    border-radius: 15px;
+    display: inline-block;
+    margin-top: 0.3rem;
+}
+
+.nav-item[b-7m3dofesld] {
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    color: #d7d7d7; /* Color normal */
+    background-color: transparent; /* Fondo normal */
+    transition: background 0.3s, color 0.3s;
+}
+
+.nav-item:hover[b-7m3dofesld] {
+    background-color: #6c63ff; /* Color al pasar el ratón */
+    color: white; /* Texto al pasar el ratón */
+}
+
+/* Cambiar el color de un ícono */
+.nav-item i[b-7m3dofesld] {
+    margin-right: 0.5rem;
+    color: inherit; /* Para que tome el color del enlace */
+}
+
+.dark-mode-toggle[b-7m3dofesld] {
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 1rem;
+    color: #d7d7d7;
+}
+
+.dark-mode-toggle input[type="checkbox"][b-7m3dofesld] {
+    margin-left: 0.5rem;
+}
+
+.nav-item .nav-link[b-7m3dofesld] {
+    color: white; /* Color personalizado para las letras */
+    text-decoration: none; /* Opcional: quitar subrayado */
+    transition: color 0.3s; /* Suavizar el cambio de color */
+}
+
+
