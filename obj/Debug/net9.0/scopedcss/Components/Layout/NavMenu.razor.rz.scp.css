@@ -60,4 +60,35 @@
     transition: color 0.3s; /* Suavizar el cambio de color */
 }
 
+.switch[b-7m3dofesld] {
+    position: relative;
+    width: 50px;
+    height: 25px;
+    background: #000000;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
 
+/* Ocultar el checkbox */
+.switch input[b-7m3dofesld] {
+    display: none;
+}
+
+/* Estilo de la bolita deslizante */
+.switch .slider[b-7m3dofesld] {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 20px;
+    height: 20px;
+    background: rgb(64, 64, 64);
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Cambio de color al activar */
+.switch input:checked + .slider[b-7m3dofesld] {
+    transform: translateX(25px);
+    background: rgb(247, 247, 172);
+}

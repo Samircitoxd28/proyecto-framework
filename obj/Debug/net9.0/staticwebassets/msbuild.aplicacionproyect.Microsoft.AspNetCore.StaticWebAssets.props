@@ -1,22 +1,22 @@
 ﻿<Project>
   <ItemGroup>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\aplicacionproyect.iigvxcr1w4.bundle.scp.css'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\aplicacionproyect.jhfi1altjr.bundle.scp.css'))">
       <SourceType>Package</SourceType>
       <SourceId>aplicacionproyect</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/aplicacionproyect</BasePath>
-      <RelativePath>aplicacionproyect.iigvxcr1w4.bundle.scp.css</RelativePath>
+      <RelativePath>aplicacionproyect.jhfi1altjr.bundle.scp.css</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>Reference</AssetMode>
       <AssetRole>Primary</AssetRole>
       <RelatedAsset></RelatedAsset>
       <AssetTraitName>ScopedCss</AssetTraitName>
       <AssetTraitValue>ProjectBundle</AssetTraitValue>
-      <Fingerprint>iigvxcr1w4</Fingerprint>
-      <Integrity>WsZIyI6ccHN2/ZpPx+YmfjOEmIwl6unQLpYiDpeD6H8=</Integrity>
+      <Fingerprint>jhfi1altjr</Fingerprint>
+      <Integrity>GUjGdCIOlQCjNazMchpPbeMK5O7W9KSy5ln4/rcCVRM=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\aplicacionproyect.iigvxcr1w4.bundle.scp.css'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\aplicacionproyect.jhfi1altjr.bundle.scp.css'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\app.css'))">
       <SourceType>Package</SourceType>

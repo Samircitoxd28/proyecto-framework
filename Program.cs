@@ -1,6 +1,13 @@
 using aplicacionproyect.Components;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using aplicacionproyect.Models;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddDbContext<HabitosDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
 
 // Add services to the container.
 builder.Services.AddRazorComponents()
@@ -24,5 +31,6 @@ app.UseAntiforgery();
 app.MapStaticAssets();
 app.MapRazorComponents<App>()
     .AddInteractiveServerRenderMode();
+
 
 app.Run();

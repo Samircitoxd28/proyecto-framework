@@ -1,0 +1,7 @@
+c:\Users\Tuf Gaming\Desktop\exposiciondeprueba\aplicacionproyect\obj\Debug\net8.0\aplicacionproyect.csproj.AssemblyReference.cache
+c:\Users\Tuf Gaming\Desktop\exposiciondeprueba\aplicacionproyect\obj\Debug\net8.0\aplicacionproyect.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\Tuf Gaming\Desktop\exposiciondeprueba\aplicacionproyect\obj\Debug\net8.0\aplicacionproyect.AssemblyInfoInputs.cache
+c:\Users\Tuf Gaming\Desktop\exposiciondeprueba\aplicacionproyect\obj\Debug\net8.0\aplicacionproyect.AssemblyInfo.cs
+c:\Users\Tuf Gaming\Desktop\exposiciondeprueba\aplicacionproyect\obj\Debug\net8.0\aplicacionproyect.csproj.CoreCompileInputs.cache
+c:\Users\Tuf Gaming\Desktop\exposiciondeprueba\aplicacionproyect\obj\Debug\net8.0\aplicacionproyect.MvcApplicationPartsAssemblyInfo.cache
+c:\Users\Tuf Gaming\Desktop\exposiciondeprueba\aplicacionproyect\obj\Debug\net8.0\aplicacionproyect.sourcelink.json

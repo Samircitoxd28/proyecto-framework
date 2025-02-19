@@ -14,11 +14,13 @@
     </div>
 
     <nav class="nav flex-column">
-        <div class="nav-item px-3">
+        <div class="nav-item px-4">
             <a class="nav-link" href="/">
-                <span class="bi bi-house-door-fill-nav-menu" aria-hidden="true"></span> Home
+        <span class="bi bi-house-door-fill-nav-menu" aria-hidden="true"></span> Home
             </a>
         </div>
+
+        
 
         <div class="nav-item px-3">
             <a class="nav-link" href="/Error">
@@ -39,10 +41,21 @@
         </div>
     </nav>
 
-    <div class="dark-mode-toggle px-3">
-        <label for="darkMode">
+    <div class="nav-item px-3">
+    <a class="nav-link" href="/Pages">
+        <span class="bi bi-question-circle-fill" aria-hidden="true"></span> Preguntas
+    </a>
+        </div>
+
+
+
+    <div  class="dark-mode-toggle px-3">
+        <label for="darkMode" class="btn btn-danger">
             <i class="bi bi-moon-fill"></i> Dark Mode
         </label>
-        <input type="checkbox" id="darkMode" />
+        <label class="switch">
+            <input type="checkbox" id="darkMode">
+            <span class="slider"></span>
+        </label>
     </div>
 
