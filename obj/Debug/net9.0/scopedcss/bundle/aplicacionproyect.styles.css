@@ -23,7 +23,7 @@ main[b-w48dgh32z6] {
 
 .sidebar[b-w48dgh32z6] {
     
-    background-color: #2A7B73;
+    background-color: #6BC6BD;
 }
 
 .top-row[b-w48dgh32z6] {
@@ -115,6 +115,15 @@ main[b-w48dgh32z6] {
     text-align: center;
     padding: 1rem 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.container-fluid img[b-7m3dofesld]{
+    width: 90px;
+    height: 60px;
+}
+
+.profile-section a[b-7m3dofesld]{
+    text-decoration: none;
 }
 
 .avatar[b-7m3dofesld] {

@@ -17,53 +17,57 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = aplicacionproyect
 build_property.RootNamespace = aplicacionproyect
-build_property.ProjectDir = c:\Users\Tuf Gaming\Desktop\exposiciondeprueba\aplicacionproyect\
+build_property.ProjectDir = c:\proyecto-framework\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 9.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = c:\Users\Tuf Gaming\Desktop\exposiciondeprueba\aplicacionproyect
+build_property.MSBuildProjectDirectory = c:\proyecto-framework
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 9.0
 build_property.EnableCodeStyleSeverity = 
 
-[c:/Users/Tuf Gaming/Desktop/exposiciondeprueba/aplicacionproyect/Components/App.razor]
+[c:/proyecto-framework/Components/App.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBcHAucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Tuf Gaming/Desktop/exposiciondeprueba/aplicacionproyect/Components/Pages/Counter.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDb3VudGVyLnJhem9y
+[c:/proyecto-framework/Components/Pages/Configuracion.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDb25maWd1cmFjaW9uLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Tuf Gaming/Desktop/exposiciondeprueba/aplicacionproyect/Components/Pages/Error.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFcnJvci5yYXpvcg==
+[c:/proyecto-framework/Components/Pages/Estadisticas.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFc3RhZGlzdGljYXMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Tuf Gaming/Desktop/exposiciondeprueba/aplicacionproyect/Components/Pages/Home.razor]
+[c:/proyecto-framework/Components/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIb21lLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Tuf Gaming/Desktop/exposiciondeprueba/aplicacionproyect/Components/Pages/Preguntas.razor]
+[c:/proyecto-framework/Components/Pages/Nuevohabito.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xOdWV2b2hhYml0by5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/proyecto-framework/Components/Pages/Perfil.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xQZXJmaWwucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/proyecto-framework/Components/Pages/Preguntas.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xQcmVndW50YXMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Tuf Gaming/Desktop/exposiciondeprueba/aplicacionproyect/Components/Pages/Weather.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xXZWF0aGVyLnJhem9y
-build_metadata.AdditionalFiles.CssScope = 
-
-[c:/Users/Tuf Gaming/Desktop/exposiciondeprueba/aplicacionproyect/Components/Routes.razor]
+[c:/proyecto-framework/Components/Routes.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xSb3V0ZXMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Tuf Gaming/Desktop/exposiciondeprueba/aplicacionproyect/Components/_Imports.razor]
+[c:/proyecto-framework/Components/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xfSW1wb3J0cy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Tuf Gaming/Desktop/exposiciondeprueba/aplicacionproyect/Components/Layout/MainLayout.razor]
+[c:/proyecto-framework/Components/Layout/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTWFpbkxheW91dC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-w48dgh32z6
 
-[c:/Users/Tuf Gaming/Desktop/exposiciondeprueba/aplicacionproyect/Components/Layout/NavMenu.razor]
+[c:/proyecto-framework/Components/Layout/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTmF2TWVudS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-7m3dofesld
